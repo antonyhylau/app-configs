@@ -20,4 +20,3 @@ keymap.set("n", "<leader>h", "<C-w>h", { desc = "Move to the left pane" })
 keymap.set("n", "<leader>j", "<C-w>j", { desc = "Move down to the pane below" })
 keymap.set("n", "<leader>k", "<C-w>k", { desc = "Move up to the pane above" })
 keymap.set("n", "<leader>l", "<C-w>l", { desc = "Move to the right pane" })
-
