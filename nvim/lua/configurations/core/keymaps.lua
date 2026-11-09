@@ -20,3 +20,13 @@ keymap.set("n", "<leader>h", "<C-w>h", { desc = "Move to the left pane" })
 keymap.set("n", "<leader>j", "<C-w>j", { desc = "Move down to the pane below" })
 keymap.set("n", "<leader>k", "<C-w>k", { desc = "Move up to the pane above" })
 keymap.set("n", "<leader>l", "<C-w>l", { desc = "Move to the right pane" })
+
+keymap.set("n", "<leader>sp", function()
+    vim.wo.spell = not vim.wo.spell
+    if vim.wo.spell then
+        print("Spell check enabled")
+    else
+        print("Spell check disabled")
+    end
+end, { desc = "Toggle spell check" })
+
